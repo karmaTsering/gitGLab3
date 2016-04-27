@@ -1,7 +1,7 @@
 """
 Description: THis program create set intersection, union, 
 """
-class Set:
+class CustomSet:
     
     def __init__(self, tmp1):
         """
