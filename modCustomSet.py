@@ -18,7 +18,7 @@ class CustomSet:
                self._setList.append(el)
 
 
-    def unionSet(tmp1,tmp2):
+    def unionSet(self, set,tmp2):
         """
         __author__="Karma Gurung"
         __date__="4/27/16"
@@ -26,7 +26,7 @@ class CustomSet:
         Pre-condition:
         Post-condition:
         
-        """
+        
         newSet=[]
         Set=[]
         for el in tmp1:
@@ -40,6 +40,14 @@ class CustomSet:
                 Set.append(el)
 
         return Set
+        """
+       
+        result = Set()
+        for i in self:
+            result.add(i)
+        for i in set:
+            result.add(i)
+        return result
         
     def intersectionSet(tmp1,tmp2):
         """
