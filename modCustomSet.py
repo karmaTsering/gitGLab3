@@ -25,52 +25,23 @@ class CustomSet:
         Description:
         Pre-condition:
         Post-condition:
-        
-        
+        """
         newSet=[]
         Set=[]
-        for el in tmp1:
-            newSet.append(el)
-
-        for el in tmp2:
-            newSet.append(el)
+        for i in self._setList:
+            newSet.append(i)
+        for i in other._SetList:
+            newSet.append(i)
 
         for el in newSet:
             if el not in Set:
                 Set.append(el)
-
         return Set
-        """
+        
        
-        result = Set()
-        for i in self:
-            result.add(i)
-        for i in set:
-            result.add(i)
-        return result
+
         
-    def intersectionSet(tmp1,tmp2):
-        """
-        __author__="Karma Gurung"
-        __date__="4/27/16"
-        Description:
-        Pre-condition:
-        Post-condition:
-        
-        """
-        newSet=[]
-        Set=[]
-        for el in tmp1:
-            newSet.append(el)
-
-        for el in tmp2:
-            newSet.append(el)
-
-        for el in newSet:
-            if el in Set:
-                Set.append(el)
-
-        return Set
+    
 
     def __str__(self):
         """
